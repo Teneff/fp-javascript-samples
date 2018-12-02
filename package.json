@@ -1,0 +1,29 @@
+{
+  "name": "fp-javascript-samples",
+  "version": "1.0.0",
+  "description": "Function Programming JavaScript Samples",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "test": "jasmine spec/**/*Spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nedyalkov/fp-javascript-samples.git"
+  },
+  "keywords": [
+    "JavaScript",
+    "Samples",
+    "Function",
+    "Programming"
+  ],
+  "author": "Miroslav Nedyalkov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nedyalkov/fp-javascript-samples/issues"
+  },
+  "homepage": "https://github.com/nedyalkov/fp-javascript-samples#readme",
+  "devDependencies": {
+    "jasmine": "^3.3.0"
+  }
+}
