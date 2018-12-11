@@ -1,4 +1,4 @@
-const { sum, sumIf } = require('../src/higherOrderFunctions');
+const { sum, sumIf, map } = require('../src/higherOrderFunctions');
 
 describe('higherOrderFunctions', () => {
     describe('sum', () => {
@@ -19,6 +19,15 @@ describe('higherOrderFunctions', () => {
             const result = sumIf([1, 2, 3, 4, 5, 6, 7, 8, 9], isEven);
 
             expect(result).toBe(20);
+        });
+    });
+
+    describe('map', () => {
+        it('should return [1, 4, 9, 16, 25] for [1, 2, 3, 4, 5] and function is square', () => {
+            const square = x => x * x;
+            const result = map([1, 2, 3, 4, 5], square);
+
+            expect(result).toEqual([1, 4, 9, 16, 25]);
         });
     });
 });

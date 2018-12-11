@@ -9,4 +9,10 @@ function sumIf(array, predicate) {
     return array.length === 0 ? 0 : addValue + sumIf(rest, predicate);
 }
 
-module.exports = { sum, sumIf };
+function map(array, func) {
+    const [first, ...rest] = array;
+
+    return array.length === 0 ? []: [func(first), ...map(rest, func)];
+}
+
+module.exports = { sum, sumIf, map };
