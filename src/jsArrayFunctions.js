@@ -4,8 +4,8 @@ function sum(array) {
     return array.reduce(add, 0);
 }
 
-function sumIf(array, filter) {
-    return array.filter(filter)
+function sumIf(array, predicate) {
+    return array.filter(predicate)
         .reduce(add, 0);
 }
 
