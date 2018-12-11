@@ -7,6 +7,10 @@ describe('higherOrderFunctions', () => {
 
             expect(result).toBe(15);
         });
+
+        it('should return 0 for []', () => {
+            expect(sum([])).toBe(0);
+        });
     });
 
     describe('sumIf', () => {

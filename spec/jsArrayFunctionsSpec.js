@@ -2,8 +2,8 @@ const { sum, sumIf } = require('../src/jsArrayFunctions');
 
 describe('jsArrayFunctions', () => {
     describe('sum', () => {
-        it('should return 10 for [1, 3, 6]', () => {
-            expect(sum([1, 3, 6])).toBe(10);
+        it('should return 15 for [1, 2, 3, 4, 5]', () => {
+            expect(sum([1, 2, 3, 4, 5])).toBe(15);
         });
 
         it('should return 0 for []', () => {
