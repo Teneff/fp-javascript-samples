@@ -16,4 +16,8 @@ function sumOfSquaresOfEvens(array) {
         .reduce(add, 0);
 }
 
-module.exports = { sum, sumIf, sumOfSquaresOfEvens };
+function map(array, fn) {
+    return array.reduce((r, x) => [...r, fn(x)], []);
+}
+
+module.exports = { sum, sumIf, sumOfSquaresOfEvens, map };

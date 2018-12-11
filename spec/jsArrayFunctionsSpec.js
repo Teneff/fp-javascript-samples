@@ -1,4 +1,4 @@
-const { sum, sumIf, sumOfSquaresOfEvens } = require('../src/jsArrayFunctions');
+const { sum, sumIf, sumOfSquaresOfEvens, map } = require('../src/jsArrayFunctions');
 
 describe('jsArrayFunctions', () => {
     describe('sum', () => {
@@ -33,6 +33,15 @@ describe('jsArrayFunctions', () => {
             const result = sumOfSquaresOfEvens(array);
 
             expect(result).toBe(20);
+        });
+    });
+
+    describe('map', () => {
+        it('should return [1, 4, 9, 16, 25] for [1, 2, 3, 4, 5] and function is square', () => {
+            const square = x => x * x;
+            const result = map([1, 2, 3, 4, 5], square);
+
+            expect(result).toEqual([1, 4, 9, 16, 25]);
         });
     });
 });
