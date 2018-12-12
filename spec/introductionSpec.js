@@ -1,4 +1,4 @@
-const { add, sumTo, sum } = require('../src/introduction');
+const { add, sumTo, sum, range } = require('../src/introduction');
 
 describe('introduction', () => {
     describe('add', () => {
@@ -24,6 +24,16 @@ describe('introduction', () => {
 
         it('should return 0 for []', () => {
             expect(sum([])).toBe(0);
+        });
+    });
+
+    describe('range', () => {
+        it('should return [1, 2, 3] for start = 1 and end = 3', () => {
+            expect(range(1, 3)).toEqual([1, 2, 3]);
+        });
+
+        it('should return [1, 2, 3] for start = 1 and end = 3', () => {
+            expect(range(1, 1)).toEqual([1]);
         });
     });
 });

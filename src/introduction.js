@@ -11,4 +11,8 @@ function sum(array) {
     return array.length === 0 ? 0 : add(first, sum(rest));
 }
 
-module.exports = { add, sumTo, sum };
+function range(start, end, step = 1) {
+    return start <= end ? [start, ...range(start + step, end, step)] : [];
+}
+
+module.exports = { add, sumTo, sum, range };
