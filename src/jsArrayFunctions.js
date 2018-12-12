@@ -9,7 +9,7 @@ function sumIf(array, predicate) {
         .reduce(add, 0);
 }
 
-function sumOfSquaresOfEvens(array) {
+function sumOfSquares(array) {
     return array
         .filter(x => x % 2 === 0)
         .map(x => x * x)
@@ -20,4 +20,4 @@ function map(array, fn) {
     return array.reduce((r, x) => [...r, fn(x)], []);
 }
 
-module.exports = { sum, sumIf, sumOfSquaresOfEvens, map };
+module.exports = { sum, sumIf, sumOfSquares, map };

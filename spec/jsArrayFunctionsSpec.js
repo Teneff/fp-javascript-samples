@@ -1,4 +1,4 @@
-const { sum, sumIf, sumOfSquaresOfEvens, map } = require('../src/jsArrayFunctions');
+const { sum, sumIf, sumOfSquares, map } = require('../src/jsArrayFunctions');
 
 describe('jsArrayFunctions', () => {
     describe('sum', () => {
@@ -20,17 +20,17 @@ describe('jsArrayFunctions', () => {
         });
     });
 
-    describe('sumOfSquaresOfEvens', () => {
+    describe('sumOfSquares', () => {
         it('should return 0 for [1]', () => {
             const array = [1];
-            const result = sumOfSquaresOfEvens(array);
+            const result = sumOfSquares(array);
 
             expect(result).toBe(0);
         });
 
         it('should return 20 for [1, 2, 3, 4]', () => {
             const array = [1, 2, 3, 4];
-            const result = sumOfSquaresOfEvens(array);
+            const result = sumOfSquares(array);
 
             expect(result).toBe(20);
         });
